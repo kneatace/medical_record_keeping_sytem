@@ -14,79 +14,6 @@ we will be using firebase for Auth and Database
 
 ## Getting Started 
 
-# first login to github from VS-code
-
-[![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/signintogithub1.png)
-]
-
-
-
-# second, go to source control menu
-
-[![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/gotosourcecontrol.png)
-]
-
-# click on clone repository
-
-[![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/clicktoclonerepo.png)
-]
-
-# paste the repo link from github and enter
-
-[![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/pastethelinkfromgithub.png)
-]
-
-# select a suitable location for cloning the repo
-
-# lastly, the directories should look like this
-
-[![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/aftercloning.png)]
-
-# then, in source control repositories(dropdown) click on main to change or create a new branch
-
-# you can also follow this video but not recommended
-[![Tutorial Video](http://img.youtube.com/vi/SD7YNLv5Evc/0.jpg)](http://www.youtube.com/watch?v=SD7YNLv5Evc)
-
-# then, create a new branch where you do the editing
-
-# changing to or from another branch
-
-![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/changingorcreatingbranch.png)
-
-# creating or choosing a new branch
-
-![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/chooseoptionstocreateanewbranchorpreviousbranch.png)
-
-
-## AFTER MAKING SOME CHANGES TO THE REPO FOLLOW THE STEPS BELOW:
-
-
-
-# after making some changes, goto source control tab you will see the list of changes to the files you have made, 
-
-![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/commitingchangestothebranch.png)
-
-# if everything is running well and you are ready to update the repo you need to write a message so that others can analyze what changes you have made
-
-![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/writingacommitmessage.png)
-
-# click "commit" it will take some time
-
-![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/syncingorpushingthecommit.png)
-
-
-# after commiting sync changes (this will push your work to the repo)
-
-![Example Image](https://github.com/bichitra-linux/unified_medical_system/blob/main/instructions%20to%20clone%20and%20commit/aftermakingchangestotherepo.png)
-
-# if you dont want to commit a specific page you can stage other changes except that by clicking '+' of all other pages except that page 
-
-
-## FOR CONNECTING THE REMOTE REPOSITORY (in terminal)(only use if you know how to because i don't,  lol!)
-```bash
-
-git remote add origin https://github.com/bichitra-linux/unified_medical_system.git
-
 ```
 
 ## running the development server:
@@ -108,8 +35,26 @@ yarn dev
 #for upgrading the packages/plugins/extensions
 yarn upgrade-interactive
 
+#if this did not work run
 
+npm install --legacy-peer-deps
+
+npm run dev
 ```
+
+
+
+
+## AFTER MAKING SOME CHANGES TO THE REPO FOLLOW THE STEPS BELOW:
+
+
+
+
+## FOR CONNECTING THE REMOTE REPOSITORY (in terminal)(only use if you know how to because i don't,  lol!)
+```bash
+
+git remote add origin https://github.com/bichitra-linux/medical_record_keeping_sytem.git
+
 for more about yarn and guide of using  it visit https://v3.yarnpkg.com
 
 
