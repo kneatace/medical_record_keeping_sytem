@@ -232,12 +232,12 @@ const foreign_employment_medical_test: React.FC = () => {
       </Button>
       <div className={scss.borderedboxreport}>
         <div className={scss.topRight}>
-          Gov.Reg. No:.78696/067/068
+          Gov.Reg. No:.11111111
         </div>
         <div className={scss.centerText}>
-          <h3>Purnima Plus Medical Centre Pvt.Ltd.</h3>
-          <h6>Gongabu, Newbuspark, KTM, Nepal-44600, Ph:+977-4957228, +977-4962714</h6>
-          <h6>Email: purnimaplus@gmail.com , Website: purnimaplus.com</h6>
+          <h3>Medical Centre Pvt.Ltd.</h3>
+          <h6>KTM, Nepal-44600, Ph:+977-97777777, +977-977777777</h6>
+          <h6>Email: helloworld@gmail.com , Website: healthsyno.com</h6>
         </div>
         <div className={scss.absoluteLeftSNo}>
           S.NO: {randomNumber}
