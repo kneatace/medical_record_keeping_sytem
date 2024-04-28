@@ -1,4 +1,4 @@
-import React, { useState, useEffect, use, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import scss from '@/styles/foreign_employment_medical_test.module.scss' // Import the module.scss file
 import { db } from '@/pages/api/database/firebase';
 import { addDoc, collection, getDoc, getDocs, updateDoc } from 'firebase/firestore';
