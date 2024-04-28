@@ -1,0 +1,37 @@
+// Define a mixin for transition
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Define variables for repeated values
+$container-height: 500px;
+$button-margin-right: 1rem;
+$loading-margin-top: 2rem;
+
+.container {
+  height: $container-height;
+  width: 100%;
+  
+  // Use nesting for related selectors
+  .button,
+  .loading {
+    // Use the transition mixin
+    @include transition(all 0.3s ease);
+  }
+
+  .button {
+    margin-right: $button-margin-right;
+    
+    &:hover {
+      background-color: darken($color: #3f51b5, $amount: 10);
+    }
+  }
+
+  .loading {
+    margin-top: $loading-margin-top;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlBhdGllbnRzVG9kYXkubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiUGF0aWVudHNUb2RheS5tb2R1bGUuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIERlZmluZSBhIG1peGluIGZvciB0cmFuc2l0aW9uXHJcbkBtaXhpbiB0cmFuc2l0aW9uKCRhcmdzKSB7XHJcbiAgLXdlYmtpdC10cmFuc2l0aW9uOiAkYXJncztcclxuICAtbW96LXRyYW5zaXRpb246ICRhcmdzO1xyXG4gIC1vLXRyYW5zaXRpb246ICRhcmdzO1xyXG4gIHRyYW5zaXRpb246ICRhcmdzO1xyXG59XHJcblxyXG4vLyBEZWZpbmUgdmFyaWFibGVzIGZvciByZXBlYXRlZCB2YWx1ZXNcclxuJGNvbnRhaW5lci1oZWlnaHQ6IDUwMHB4O1xyXG4kYnV0dG9uLW1hcmdpbi1yaWdodDogMXJlbTtcclxuJGxvYWRpbmctbWFyZ2luLXRvcDogMnJlbTtcclxuXHJcbi5jb250YWluZXIge1xyXG4gIGhlaWdodDogJGNvbnRhaW5lci1oZWlnaHQ7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgXHJcbiAgLy8gVXNlIG5lc3RpbmcgZm9yIHJlbGF0ZWQgc2VsZWN0b3JzXHJcbiAgLmJ1dHRvbixcclxuICAubG9hZGluZyB7XHJcbiAgICAvLyBVc2UgdGhlIHRyYW5zaXRpb24gbWl4aW5cclxuICAgIEBpbmNsdWRlIHRyYW5zaXRpb24oYWxsIDAuM3MgZWFzZSk7XHJcbiAgfVxyXG5cclxuICAuYnV0dG9uIHtcclxuICAgIG1hcmdpbi1yaWdodDogJGJ1dHRvbi1tYXJnaW4tcmlnaHQ7XHJcbiAgICBcclxuICAgICY6aG92ZXIge1xyXG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBkYXJrZW4oJGNvbG9yOiAjM2Y1MWI1LCAkYW1vdW50OiAxMCk7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuICAubG9hZGluZyB7XHJcbiAgICBtYXJnaW4tdG9wOiAkbG9hZGluZy1tYXJnaW4tdG9wO1xyXG4gIH1cclxufSJdfQ== */

@@ -1,0 +1,72 @@
+$primary-color: #1eecff;
+$overlay-color: #000;
+$button-width: 18.75rem;
+$button-height: 5.625rem;
+$font-large: 1.875rem;
+
+.addPatientForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+
+  .textField {
+    width: 100%;
+  }
+
+  .button {
+    align-self: flex-end;
+    width: $button-width;
+    height: $button-height;
+    font-size: $font-large;
+    font-weight: bold;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 40.95%;
+  height: 77.5%;
+  background: repeating-linear-gradient(0deg,
+      transparent,
+      transparent calc(100% / 3),
+      $overlay-color calc(100% / 3),
+      $overlay-color calc(2 * 100% / 3),
+    ),
+    repeating-linear-gradient(90deg,
+      transparent,
+      transparent calc(100% / 3),
+      $overlay-color calc(100% / 3),
+      $overlay-color calc(2 * 100% / 3),
+    );
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.checkboxContainer {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkboxLabel {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.checkbox {
+  margin-right: 15px;
+  color: #3f51b5; // Change this to your preferred color
+  &:hover {
+    color: #1a237e; // Change this to your preferred hover color
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFkZFBhdGllbnQubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiQWRkUGF0aWVudC5tb2R1bGUuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiRwcmltYXJ5LWNvbG9yOiAjMWVlY2ZmO1xyXG4kb3ZlcmxheS1jb2xvcjogIzAwMDtcclxuJGJ1dHRvbi13aWR0aDogMTguNzVyZW07XHJcbiRidXR0b24taGVpZ2h0OiA1LjYyNXJlbTtcclxuJGZvbnQtbGFyZ2U6IDEuODc1cmVtO1xyXG5cclxuLmFkZFBhdGllbnRGb3JtIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgZ2FwOiAxLjI1cmVtO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG5cclxuICAudGV4dEZpZWxkIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxuXHJcbiAgLmJ1dHRvbiB7XHJcbiAgICBhbGlnbi1zZWxmOiBmbGV4LWVuZDtcclxuICAgIHdpZHRoOiAkYnV0dG9uLXdpZHRoO1xyXG4gICAgaGVpZ2h0OiAkYnV0dG9uLWhlaWdodDtcclxuICAgIGZvbnQtc2l6ZTogJGZvbnQtbGFyZ2U7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICRwcmltYXJ5LWNvbG9yO1xyXG4gICAgYm9yZGVyOiBub25lO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMC42MjVyZW07XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlLWluLW91dDtcclxuICB9XHJcbn1cclxuXHJcbi5vdmVybGF5IHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAxNSU7XHJcbiAgbGVmdDogMDtcclxuICB3aWR0aDogNDAuOTUlO1xyXG4gIGhlaWdodDogNzcuNSU7XHJcbiAgYmFja2dyb3VuZDogcmVwZWF0aW5nLWxpbmVhci1ncmFkaWVudCgwZGVnLFxyXG4gICAgICB0cmFuc3BhcmVudCxcclxuICAgICAgdHJhbnNwYXJlbnQgY2FsYygxMDAlIC8gMyksXHJcbiAgICAgICRvdmVybGF5LWNvbG9yIGNhbGMoMTAwJSAvIDMpLFxyXG4gICAgICAkb3ZlcmxheS1jb2xvciBjYWxjKDIgKiAxMDAlIC8gMyksXHJcbiAgICApLFxyXG4gICAgcmVwZWF0aW5nLWxpbmVhci1ncmFkaWVudCg5MGRlZyxcclxuICAgICAgdHJhbnNwYXJlbnQsXHJcbiAgICAgIHRyYW5zcGFyZW50IGNhbGMoMTAwJSAvIDMpLFxyXG4gICAgICAkb3ZlcmxheS1jb2xvciBjYWxjKDEwMCUgLyAzKSxcclxuICAgICAgJG92ZXJsYXktY29sb3IgY2FsYygyICogMTAwJSAvIDMpLFxyXG4gICAgKTtcclxuICBvcGFjaXR5OiAwLjU7XHJcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XHJcbn1cclxuXHJcbi5jaGVja2JveENvbnRhaW5lciB7XHJcbiAgbWFyZ2luOiAyMHB4IDA7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcblxyXG4uY2hlY2tib3hMYWJlbCB7XHJcbiAgZm9udC1zaXplOiAxOHB4O1xyXG4gIGNvbG9yOiAjMzMzO1xyXG4gIGZvbnQtd2VpZ2h0OiA1MDA7XHJcbn1cclxuXHJcbi5jaGVja2JveCB7XHJcbiAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xyXG4gIGNvbG9yOiAjM2Y1MWI1OyAvLyBDaGFuZ2UgdGhpcyB0byB5b3VyIHByZWZlcnJlZCBjb2xvclxyXG4gICY6aG92ZXIge1xyXG4gICAgY29sb3I6ICMxYTIzN2U7IC8vIENoYW5nZSB0aGlzIHRvIHlvdXIgcHJlZmVycmVkIGhvdmVyIGNvbG9yXHJcbiAgfVxyXG59Il19 */

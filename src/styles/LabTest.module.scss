@@ -1,0 +1,92 @@
+// LabTest.module.scss
+// Define common padding and margin values
+$common-padding: 2em;
+$common-margin: 1rem;
+
+// Define common font sizes
+$large-font-size: 2rem;
+
+// Define common border radius
+$common-border-radius: 15px;
+
+// Define common box shadow
+$common-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+// Define base styles
+$base-font-family: Arial, sans-serif;
+$base-margin: 2rem;
+$base-border-radius: 15px;
+$base-font-size: 1.2rem;
+
+// Define box shadow mixin
+@mixin box-shadow($color) {
+    box-shadow: 0px 10px 15px -3px $color, 0px 4px 6px -2px lighten($color, 20%);
+}
+
+.data-grid-wrapper .MuiDataGrid-root {
+    overflow: auto !important;
+}
+
+.container {
+    height: 77.8vh; // 80% of the viewport height
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $common-padding;
+    border-radius: $common-border-radius;
+    box-shadow: $common-box-shadow;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+
+    &:hover {
+        box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.2), 0px 4px 6px -2px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.searchField {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+
+    .MuiTextField-root {
+        width: 100%;
+    }
+}
+
+.dataGrid {
+    width: 100%;
+    max-width: auto;
+    height: 80%;
+
+    .MuiDataGrid-root {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+        .MuiDataGrid-columnHeaderTitle {
+            font-weight: 600;
+        }
+
+        .MuiDataGrid-cell {
+            font-size: 0.875rem;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+}
+
+.selectField {
+    width: 100%; // Takes the full width of the cell
+    box-sizing: border-box; // Includes padding and border in element's total width and height
+    margin: 0; // Removes any default margin
+    padding: 0; // Removes any default padding
+    height: auto; // Adjusts height automatically based on the content
+    font-size: 1em; // Adjusts font size
+    position: relative; // Positions the select field relative to its normal position
+    z-index: 1; // Stacks the select field above other elements
+    //overflow: visible; // Allows the select field to overflow outside its container
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkxhYlRlc3QubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoiTGFiVGVzdC5tb2R1bGUuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIExhYlRlc3QubW9kdWxlLnNjc3NcclxuLy8gRGVmaW5lIGNvbW1vbiBwYWRkaW5nIGFuZCBtYXJnaW4gdmFsdWVzXHJcbiRjb21tb24tcGFkZGluZzogMmVtO1xyXG4kY29tbW9uLW1hcmdpbjogMXJlbTtcclxuXHJcbi8vIERlZmluZSBjb21tb24gZm9udCBzaXplc1xyXG4kbGFyZ2UtZm9udC1zaXplOiAycmVtO1xyXG5cclxuLy8gRGVmaW5lIGNvbW1vbiBib3JkZXIgcmFkaXVzXHJcbiRjb21tb24tYm9yZGVyLXJhZGl1czogMTVweDtcclxuXHJcbi8vIERlZmluZSBjb21tb24gYm94IHNoYWRvd1xyXG4kY29tbW9uLWJveC1zaGFkb3c6IDBweCAxMHB4IDE1cHggLTNweCByZ2JhKDAsIDAsIDAsIDAuMSksIDBweCA0cHggNnB4IC0ycHggcmdiYSgwLCAwLCAwLCAwLjA1KTtcclxuXHJcbi8vIERlZmluZSBiYXNlIHN0eWxlc1xyXG4kYmFzZS1mb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7XHJcbiRiYXNlLW1hcmdpbjogMnJlbTtcclxuJGJhc2UtYm9yZGVyLXJhZGl1czogMTVweDtcclxuJGJhc2UtZm9udC1zaXplOiAxLjJyZW07XHJcblxyXG4vLyBEZWZpbmUgYm94IHNoYWRvdyBtaXhpblxyXG5AbWl4aW4gYm94LXNoYWRvdygkY29sb3IpIHtcclxuICAgIGJveC1zaGFkb3c6IDBweCAxMHB4IDE1cHggLTNweCAkY29sb3IsIDBweCA0cHggNnB4IC0ycHggbGlnaHRlbigkY29sb3IsIDIwJSk7XHJcbn1cclxuXHJcbi5kYXRhLWdyaWQtd3JhcHBlciAuTXVpRGF0YUdyaWQtcm9vdCB7XHJcbiAgICBvdmVyZmxvdzogYXV0byAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4uY29udGFpbmVyIHtcclxuICAgIGhlaWdodDogNzcuOHZoOyAvLyA4MCUgb2YgdGhlIHZpZXdwb3J0IGhlaWdodFxyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBwYWRkaW5nOiAkY29tbW9uLXBhZGRpbmc7XHJcbiAgICBib3JkZXItcmFkaXVzOiAkY29tbW9uLWJvcmRlci1yYWRpdXM7XHJcbiAgICBib3gtc2hhZG93OiAkY29tbW9uLWJveC1zaGFkb3c7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcyBlYXNlO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxuXHJcbiAgICAmOmhvdmVyIHtcclxuICAgICAgICBib3gtc2hhZG93OiAwcHggMTBweCAyMHB4IC0zcHggcmdiYSgwLCAwLCAwLCAwLjIpLCAwcHggNHB4IDZweCAtMnB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcclxuICAgIH1cclxufVxyXG5cclxuLnNlYXJjaEZpZWxkIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgbWF4LXdpZHRoOiA1MDBweDtcclxuICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XHJcblxyXG4gICAgLk11aVRleHRGaWVsZC1yb290IHtcclxuICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgIH1cclxufVxyXG5cclxuLmRhdGFHcmlkIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgbWF4LXdpZHRoOiBhdXRvO1xyXG4gICAgaGVpZ2h0OiA4MCU7XHJcblxyXG4gICAgLk11aURhdGFHcmlkLXJvb3Qge1xyXG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XHJcbiAgICAgICAgYm9yZGVyLXJhZGl1czogMTBweDtcclxuICAgICAgICBib3gtc2hhZG93OiAwIDJweCAxMHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcclxuXHJcbiAgICAgICAgLk11aURhdGFHcmlkLWNvbHVtbkhlYWRlclRpdGxlIHtcclxuICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDYwMDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5NdWlEYXRhR3JpZC1jZWxsIHtcclxuICAgICAgICAgICAgZm9udC1zaXplOiAwLjg3NXJlbTtcclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgJjpob3ZlciB7XHJcbiAgICAgICAgYm94LXNoYWRvdzogMCAzcHggNnB4IHJnYmEoMCwgMCwgMCwgMC4xNiksIDAgM3B4IDZweCByZ2JhKDAsIDAsIDAsIDAuMjMpO1xyXG4gICAgfVxyXG59XHJcblxyXG4uc2VsZWN0RmllbGQge1xyXG4gICAgd2lkdGg6IDEwMCU7IC8vIFRha2VzIHRoZSBmdWxsIHdpZHRoIG9mIHRoZSBjZWxsXHJcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94OyAvLyBJbmNsdWRlcyBwYWRkaW5nIGFuZCBib3JkZXIgaW4gZWxlbWVudCdzIHRvdGFsIHdpZHRoIGFuZCBoZWlnaHRcclxuICAgIG1hcmdpbjogMDsgLy8gUmVtb3ZlcyBhbnkgZGVmYXVsdCBtYXJnaW5cclxuICAgIHBhZGRpbmc6IDA7IC8vIFJlbW92ZXMgYW55IGRlZmF1bHQgcGFkZGluZ1xyXG4gICAgaGVpZ2h0OiBhdXRvOyAvLyBBZGp1c3RzIGhlaWdodCBhdXRvbWF0aWNhbGx5IGJhc2VkIG9uIHRoZSBjb250ZW50XHJcbiAgICBmb250LXNpemU6IDFlbTsgLy8gQWRqdXN0cyBmb250IHNpemVcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTsgLy8gUG9zaXRpb25zIHRoZSBzZWxlY3QgZmllbGQgcmVsYXRpdmUgdG8gaXRzIG5vcm1hbCBwb3NpdGlvblxyXG4gICAgei1pbmRleDogMTsgLy8gU3RhY2tzIHRoZSBzZWxlY3QgZmllbGQgYWJvdmUgb3RoZXIgZWxlbWVudHNcclxuICAgIC8vb3ZlcmZsb3c6IHZpc2libGU7IC8vIEFsbG93cyB0aGUgc2VsZWN0IGZpZWxkIHRvIG92ZXJmbG93IG91dHNpZGUgaXRzIGNvbnRhaW5lclxyXG59Il19 */

@@ -1,0 +1,66 @@
+$mobileBreakpoint: 550px;
+
+.wrapper {
+  display: flex;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  width: 100%;
+
+  @media screen and (min-width: $mobileBreakpoint) {
+    flex-direction: row;
+  }
+}
+
+.chart {
+  width: 100%;
+  max-width: 100%;
+
+  @media screen and (min-width: $mobileBreakpoint) {
+    max-width: 100%;
+  }
+}
+
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  width: 80%;
+
+  > * {
+    
+    min-width: 50%; // Adjust as needed
+  }
+
+  @media screen and (min-width: $mobileBreakpoint) {
+    flex-direction: column;
+
+    > * {
+      min-width: 0;
+    }
+  }
+}
+
+.cardValue {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+
+  @media screen and (min-width: $mobileBreakpoint) {
+    padding: 0.5rem;
+  }
+}
+
+.cardTitle p {
+  font-size: 1.5rem;
+}
+
+.cardValue p {
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlRyYW5zYWN0aW9uUGVyRGF5Lm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6IlRyYW5zYWN0aW9uUGVyRGF5Lm1vZHVsZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiJG1vYmlsZUJyZWFrcG9pbnQ6IDU1MHB4O1xyXG5cclxuLndyYXBwZXIge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbn1cclxuXHJcbi50cmFuc2FjdGlvbnMge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBwYWRkaW5nOiAxcmVtIDJyZW07XHJcbiAgd2lkdGg6IDEwMCU7XHJcblxyXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6ICRtb2JpbGVCcmVha3BvaW50KSB7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gIH1cclxufVxyXG5cclxuLmNoYXJ0IHtcclxuICB3aWR0aDogMTAwJTtcclxuICBtYXgtd2lkdGg6IDEwMCU7XHJcblxyXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6ICRtb2JpbGVCcmVha3BvaW50KSB7XHJcbiAgICBtYXgtd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG59XHJcblxyXG4uY2FyZFdyYXBwZXIge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC13cmFwOiB3cmFwO1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICBnYXA6IDEwcHg7XHJcbiAgd2lkdGg6IDgwJTtcclxuXHJcbiAgPiAqIHtcclxuICAgIFxyXG4gICAgbWluLXdpZHRoOiA1MCU7IC8vIEFkanVzdCBhcyBuZWVkZWRcclxuICB9XHJcblxyXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6ICRtb2JpbGVCcmVha3BvaW50KSB7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG5cclxuICAgID4gKiB7XHJcbiAgICAgIG1pbi13aWR0aDogMDtcclxuICAgIH1cclxuICB9XHJcbn1cclxuXHJcbi5jYXJkVmFsdWUge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBwYWRkaW5nOiAxcmVtO1xyXG4gIGJvcmRlci1yYWRpdXM6IDhweDtcclxuICB3aWR0aDogMTAwJTtcclxuXHJcbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogJG1vYmlsZUJyZWFrcG9pbnQpIHtcclxuICAgIHBhZGRpbmc6IDAuNXJlbTtcclxuICB9XHJcbn1cclxuXHJcbi5jYXJkVGl0bGUgcCB7XHJcbiAgZm9udC1zaXplOiAxLjVyZW07XHJcbn1cclxuXHJcbi5jYXJkVmFsdWUgcCB7XHJcbiAgZm9udC1zaXplOiAxLjJyZW07XHJcbn0iXX0= */

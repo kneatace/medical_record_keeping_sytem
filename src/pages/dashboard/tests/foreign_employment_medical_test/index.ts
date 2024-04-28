@@ -1,0 +1,1 @@
+export { default } from './foreign_employment_medical_test';

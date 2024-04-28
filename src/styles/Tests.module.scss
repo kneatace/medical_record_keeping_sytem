@@ -1,0 +1,22 @@
+.tests {
+    padding: 20px;
+    
+  }
+  
+  .testRow {
+    &:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  }
+  
+  .testRow:hover {
+    background-color: #ddd;
+  }
+  
+  .button {
+    margin-right: 10px;
+  }
+  .createTestButton {
+    margin-bottom: 20px;
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlRlc3RzLm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6IlRlc3RzLm1vZHVsZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRlc3RzIHtcclxuICAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgICBcclxuICB9XHJcbiAgXHJcbiAgLnRlc3RSb3cge1xyXG4gICAgJjpudGgtY2hpbGQoZXZlbikge1xyXG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjJmMmYyO1xyXG4gICAgfVxyXG4gIH1cclxuICBcclxuICAudGVzdFJvdzpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZGRkO1xyXG4gIH1cclxuICBcclxuICAuYnV0dG9uIHtcclxuICAgIG1hcmdpbi1yaWdodDogMTBweDtcclxuICB9XHJcbiAgLmNyZWF0ZVRlc3RCdXR0b24ge1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxuICB9Il19 */

@@ -1,0 +1,40 @@
+$form-padding: 2rem;
+$form-border-radius: 15px;
+$transition-duration: 0.3s;
+$textField-margin-bottom: 1rem;
+$submitButton-padding: 0.5rem 1rem;
+$submitButton-margin-top: 1rem;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: $form-padding;
+  border-radius: $form-border-radius;
+  transition: transform $transition-duration ease;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.textField {
+  margin-bottom: $textField-margin-bottom;
+  transition: transform $transition-duration ease;
+
+  &:focus-within {
+    transform: scale(1.01);
+  }
+}
+
+.submitButton {
+  align-self: flex-end;
+  padding: $submitButton-padding;
+  margin-top: $submitButton-margin-top;
+  transition: transform $transition-duration ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNyZWF0ZUFnZW50Lm1vZHVsZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwiZmlsZSI6IkNyZWF0ZUFnZW50Lm1vZHVsZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiJGZvcm0tcGFkZGluZzogMnJlbTtcclxuJGZvcm0tYm9yZGVyLXJhZGl1czogMTVweDtcclxuJHRyYW5zaXRpb24tZHVyYXRpb246IDAuM3M7XHJcbiR0ZXh0RmllbGQtbWFyZ2luLWJvdHRvbTogMXJlbTtcclxuJHN1Ym1pdEJ1dHRvbi1wYWRkaW5nOiAwLjVyZW0gMXJlbTtcclxuJHN1Ym1pdEJ1dHRvbi1tYXJnaW4tdG9wOiAxcmVtO1xyXG5cclxuLmZvcm0ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBnYXA6IDFyZW07XHJcbiAgcGFkZGluZzogJGZvcm0tcGFkZGluZztcclxuICBib3JkZXItcmFkaXVzOiAkZm9ybS1ib3JkZXItcmFkaXVzO1xyXG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAkdHJhbnNpdGlvbi1kdXJhdGlvbiBlYXNlO1xyXG5cclxuICAmOmhvdmVyIHtcclxuICAgIHRyYW5zZm9ybTogc2NhbGUoMS4wMSk7XHJcbiAgfVxyXG59XHJcblxyXG4udGV4dEZpZWxkIHtcclxuICBtYXJnaW4tYm90dG9tOiAkdGV4dEZpZWxkLW1hcmdpbi1ib3R0b207XHJcbiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtICR0cmFuc2l0aW9uLWR1cmF0aW9uIGVhc2U7XHJcblxyXG4gICY6Zm9jdXMtd2l0aGluIHtcclxuICAgIHRyYW5zZm9ybTogc2NhbGUoMS4wMSk7XHJcbiAgfVxyXG59XHJcblxyXG4uc3VibWl0QnV0dG9uIHtcclxuICBhbGlnbi1zZWxmOiBmbGV4LWVuZDtcclxuICBwYWRkaW5nOiAkc3VibWl0QnV0dG9uLXBhZGRpbmc7XHJcbiAgbWFyZ2luLXRvcDogJHN1Ym1pdEJ1dHRvbi1tYXJnaW4tdG9wO1xyXG4gIHRyYW5zaXRpb246IHRyYW5zZm9ybSAkdHJhbnNpdGlvbi1kdXJhdGlvbiBlYXNlO1xyXG5cclxuICAmOmhvdmVyIHtcclxuICAgIHRyYW5zZm9ybTogc2NhbGUoMS4xKTtcclxuICB9XHJcbn0iXX0= */
