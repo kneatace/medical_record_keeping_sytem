@@ -82,5 +82,11 @@
     "storybook-dark-mode": "^4.0.1",
     "typescript": "^5.4.5"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.1.1",
+  "description": "| Contributor      | Assigned Work                   |\r | -----------      | -------------                   |\r | @Bichitra-linux  | UI, page layouts                |\r | @Onehealthpoint(sadik)  | Report Designing, api debugging |\r | @KritanStha      | page layouts, fianalizing       |\r | @kneatace(nitesh)        | package maintance, ui           |",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "medical_record_keeping_system"
+  }
 }
